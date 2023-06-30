@@ -101,5 +101,10 @@ public:
 			cout << "tree is empty" << endl;
 			return;
 		}
+		if (ptr != NULL) {
+			cout << ptr->info << "";
+			postorder(ptr->leftchild);
+			postorder(ptr->rightchild);
+		}
 	}
 };
