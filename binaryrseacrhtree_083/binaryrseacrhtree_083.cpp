@@ -132,26 +132,32 @@ int main() {
 		{
 			cout << "enter a word: ";
 			string word;
-			cin >> > word;
-			operator.insert(word);
+			cin >> word;
+			obj.insert(word);
 			break;
 		}
 		case'2':
 		{
-			obj.inorder(obj.ROOT)
+			obj.inorder(obj.ROOT);
+			break;
 		}
 
 		case'3':
 		{
-
+			obj.preorder(obj.ROOT);
+			break;
 		}
 
 		case'4':
 		{
-
+			obj.postorder(obj.ROOT);
+			break;
 		}
-
+		case'5':
+			return 0;
 		default:
+		{
+			cout << "invalid option" << endl;
 			break;
 		}
 
