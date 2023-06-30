@@ -75,8 +75,8 @@ public:
 		}
 		if (ptr != NULL)
 		{
-			cout << ptr->info << "";
 			inorder(ptr->leftchild);
+			cout << ptr->info << "";
 			inorder(ptr->rightchild);
 		}
 	}
@@ -102,9 +102,10 @@ public:
 			return;
 		}
 		if (ptr != NULL) {
-			cout << ptr->info << "";
 			postorder(ptr->leftchild);
 			postorder(ptr->rightchild);
+			cout << ptr->info << "";
+
 		}
 	}
 };
