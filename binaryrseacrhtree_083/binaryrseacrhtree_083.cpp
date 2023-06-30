@@ -68,6 +68,9 @@ public:
 	}
 
 	void inorder(Node* ptr) {
+		if (ROOT == NULL)
+		{
 
+		}
 	}
 };
